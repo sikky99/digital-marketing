@@ -1,0 +1,31 @@
+/*------------- #INTERESTED-PRODUCTS --------------*/
+
+
+
+.interested-products {
+  .heading {
+    margin-bottom: 50px;
+  }
+
+  .books-item {
+    margin-bottom: 60px;
+  }
+}
+
+/*/ Effect 2: Move Up /*/
+#items-grid > div.animate {
+  -webkit-transform: translateY(200px);
+  transform: translateY(200px);
+  -webkit-animation: moveUp 0.65s ease forwards;
+  animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+  0% { }
+  100% { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+  0% { }
+  100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+}

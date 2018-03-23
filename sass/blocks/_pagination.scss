@@ -1,0 +1,88 @@
+/*------------- #PAGINATION --------------*/
+
+
+.pagination, .swiper-pagination {
+
+  position: absolute;
+  transition: all .3s ease;
+  align-items: center;
+
+  .pagination-item, .swiper-pagination-bullet {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #f0f2f2;
+    margin: auto 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease;
+
+    @media (max-width: 640px) {
+      width: 10px;
+      height: 10px;
+    }
+
+    &.active, &.swiper-pagination-bullet-active {
+      width: 15px;
+      height: 15px;
+      background-color: transparent;
+      border: 2px solid $primary-color;
+      transition: all .3s ease;
+
+      @media (max-width: 640px) {
+        width: 10px;
+        height: 10px;
+        border-width: 1px;
+      }
+    }
+  }
+
+  &.light {
+    .pagination-item, .swiper-pagination-bullet {
+      background-color: #f0f2f2;
+
+      &.active {
+        background-color: transparent;
+        border: 2px solid $primary-color;
+      }
+    }
+  }
+
+  &.dark {
+    .pagination-item, .swiper-pagination-bullet {
+      background-color: $heading-color;
+
+      &.active {
+        background-color: transparent;
+        border: 2px solid $white-color;
+      }
+    }
+  }
+
+  &.grey {
+    .pagination-item, .owl-dot {
+      background-color: #d7d7d7;
+
+      &.active {
+        background-color: transparent;
+        border: 2px solid $primary-color;
+      }
+    }
+  }
+
+  &.pagination-vertical {
+
+    .pagination-item, .owl-dot {
+      display: block;
+      margin: 9px auto;
+      background-color: #acd373;
+
+      &.active {
+        border-color: $white-color;
+        background-color: transparent;
+      }
+
+    }
+  }
+}
+

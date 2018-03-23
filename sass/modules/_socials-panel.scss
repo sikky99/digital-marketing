@@ -1,0 +1,41 @@
+/*------------- #SOCIALS-PANEL --------------*/
+
+
+.socials-panel {
+  .socials-panel-item {
+	width: 20%;
+	text-align: center;
+	padding: 25px;
+	display: inline-block;
+	float: left;
+	min-height: 80px;
+
+	@media (max-width: 1024px) {
+	  width: 33.33%;
+	}
+
+	@media (max-width: 570px) {
+	  width: 50%;
+	}
+
+	@media (max-width: 480px) {
+	  width: 100%;
+	}
+
+	.social__item {
+	  margin-right: 15px;
+	  display: inline-block;
+
+	  i {
+		font-size: 25px;
+		color: $white-color;
+	  }
+	}
+
+	.socials-panel-title {
+	  display: inline-block;
+	  color: $white-color;
+	}
+  }
+
+}

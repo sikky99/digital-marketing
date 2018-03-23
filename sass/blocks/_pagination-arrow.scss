@@ -1,0 +1,172 @@
+/*------------- #PAGINATION-ARROW --------------*/
+
+
+
+.pagination-arrow {
+	padding: 100px 0 110px;
+  	position: relative;
+  	overflow: hidden;
+  	margin-bottom: 60px;
+
+  @media (max-width: 768px) {
+	padding: 40px 0 50px;
+  }
+
+  .btn-prev-wrap {
+	left: 5px;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	display: flex;
+	align-items: center;
+	position: absolute;
+
+	.btn-prev {
+	  position: relative;
+	  margin-right: 35px;
+
+	  &:hover {
+		margin-left: 0;
+	  }
+	}
+
+	.btn-content {
+	  position: relative;
+
+	  @media (max-width: 800px) {
+		display: none;
+	  }
+
+	  .btn-content-title {
+		text-transform: uppercase;
+		font-size: 18px;
+		color: $heading-color;
+		transition: all .3s ease;
+	  }
+
+	  .btn-content-subtitle {
+		font-size: 14px;
+		margin-bottom: 0;
+		color: $font-color;
+		transition: all .3s ease;
+	  }
+
+	}
+
+	&:hover {
+
+	  margin-left: -2px;
+
+	  .btn-content {
+
+		.btn-content-title {
+		  color: $primary-color;
+		}
+
+		.btn-content-subtitle {
+		  color: $heading-color;
+		}
+
+	  }
+
+	  .btn-prev {
+		fill: $primary-color;
+	  }
+
+	}
+  }
+
+  .all-project {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+
+	i {
+	  font-size: 50px;
+	  color: #d7d7d7;
+	  transition: all .3s ease;
+	}
+
+	&:hover {
+	  i {
+		color: $primary-color;
+	  }
+
+	}
+  }
+
+  .btn-next-wrap {
+	right: 5px;
+	top: 50%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	display: flex;
+	align-items: center;
+	position: absolute;
+
+	.btn-next {
+	position: relative;
+
+	  &:hover {
+		margin-right: 0;
+	  }
+	}
+
+	.btn-content {
+	  position: relative;
+	  text-align: right;
+	  margin-right: 35px;
+
+	  @media (max-width: 800px) {
+		display: none;
+	  }
+
+	  .btn-content-title {
+		text-transform: uppercase;
+		font-size: 18px;
+		color: $heading-color;
+		transition: all .3s ease;
+	  }
+
+	  .btn-content-subtitle {
+		font-size: 14px;
+		margin-bottom: 0;
+		color: $font-color;
+		transition: all .3s ease;
+	  }
+
+	}
+
+	&:hover {
+
+	  margin-right: -2px;
+
+	  .btn-content {
+
+		.btn-content-title {
+		  color: $primary-color;
+		}
+
+		.btn-content-subtitle {
+		  color: $heading-color;
+		}
+
+	  }
+
+	  .btn-next {
+		fill: $primary-color;
+	  }
+	}
+  }
+
+  span {
+	display: block;
+  }
+}
+
+

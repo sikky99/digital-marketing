@@ -1,0 +1,39 @@
+/*------------- #OFFERS --------------*/
+
+
+.our-video {
+  overflow: hidden;
+
+  @media (max-width: 640px) {
+    display: block;
+  }
+
+  .video {
+    min-height: 500px;
+    background: url("../img/video2.png") no-repeat 50% 50%, #3cb878;
+    background-size: contain;
+
+    .video-control {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+  }
+
+  .content {
+    padding-right: 15px;
+    padding-left: 15px;
+    .heading {
+      .heading-text {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+
+}

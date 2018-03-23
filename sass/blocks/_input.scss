@@ -1,0 +1,74 @@
+/*------------- #INPUT --------------*/
+
+
+input {
+  padding: 20px 40px;
+  border-color: transparent;
+  transition: all .3s ease;
+  font-size: 16px;
+  color: $font-color;
+  margin-bottom: 30px;
+
+  &.input-standard-grey {
+	border-radius: 50px;
+	background-color: $border-color;
+
+	&:focus {
+	  background-color: $white-color;
+	  color: $primary-color;
+	  box-shadow: 17px 0 60px #d3dcdc;
+	}
+
+	&.focus-white:focus {
+	  background-color: #fff;
+	  -webkit-box-shadow: 25px 20px 20px -15px rgba(0, 0, 0, 0.3);
+	  box-shadow: 25px 20px 20px -15px rgba(0, 0, 0, 0.3);
+	}
+  }
+
+  &.input-dark {
+	background-color: #373434;
+	color: #797676;
+  }
+
+  &.input-white {
+	background-color: #fff;
+  }
+
+}
+
+textarea {
+  padding: 20px 40px;
+  border-color: transparent;
+  transition: all .3s ease;
+  font-size: 16px;
+  color: $font-color;
+  height: 100%;
+  margin-bottom: 30px;
+
+  &.input-standard-grey {
+	border-radius: 50px;
+	background-color: $border-color;
+
+	&:focus {
+	  background-color: $white-color;
+	  color: $primary-color;
+	  box-shadow: 17px 0 60px #d3dcdc;
+	}
+
+	&.focus-white:focus {
+	  background-color: #fff;
+	  -webkit-box-shadow: 25px 20px 20px -15px rgba(0, 0, 0, 0.3);
+	  box-shadow: 25px 20px 20px -15px rgba(0, 0, 0, 0.3);
+	}
+  }
+
+  &.input-dark {
+	background-color: #373434;
+	color: #797676;
+  }
+
+  &.input-white {
+	background-color: #fff;
+  }
+}

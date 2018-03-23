@@ -1,0 +1,107 @@
+/*------------- #SEO-SCORE --------------*/
+
+
+.seo-score {
+  background-color: $heading-color;
+  padding: 130px 0 200px;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 640px) {
+    padding: 65px 0 100px;
+  }
+
+  @media (max-width: 460px) {
+    padding: 65px 0 180px;
+  }
+
+  .seo-score-content {
+    z-index: 2;
+    position: relative;
+
+    .heading {
+      .heading-title {
+        color: $white-color;
+        margin-bottom: 10px;
+      }
+
+      .heading-text {
+        color: #797676;
+      }
+    }
+
+    .input-drop-shadow {
+      input{
+        -webkit-box-shadow: 25px 20px 20px -15px rgba(0, 0, 0, 0.3);
+        box-shadow: 25px 20px 20px -15px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .seo-score-form {
+
+      input {
+
+        &.site {
+          border-radius: 50px 0 0 50px;
+
+          @media (max-width: 1024px) {
+            border-radius: 50px;
+            margin-bottom: 30px;
+          }
+        }
+
+        &.e-mail {
+          border-radius: 0 50px 50px 0;
+          margin-left: 2px;
+
+          @media (max-width: 1024px) {
+            border-radius: 50px;
+          }
+        }
+      }
+
+      .no-padding {
+
+        @media (max-width: 640px) {
+          padding: 0 15px;
+        }
+
+      }
+
+      button {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .images {
+    img {
+      position: absolute;
+      opacity: 0;
+
+      &:first-of-type {
+        top: -100px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+      }
+
+      &:nth-child(2) {
+        bottom: -100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+      }
+
+      &:last-of-type {
+        bottom: -100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+      }
+    }
+  }
+}

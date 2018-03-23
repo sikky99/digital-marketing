@@ -1,0 +1,9 @@
+/*------------- #ANIMATION-ICON --------------*/
+
+
+
+.js-animate-icon svg{opacity: 0; transition: opacity 200ms linear;}
+.js-animate-icon .drawsvg-initialized{opacity: 1;}
+
+
+.animate-3d-holder {position: relative; cursor: pointer}

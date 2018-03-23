@@ -1,0 +1,98 @@
+/*------------- #PIE-CHARTS --------------*/
+
+
+
+.pie-chart-item {
+
+  @media (max-width: 570px) {
+margin-bottom: 30px;
+  }
+
+  .pie-chart {
+
+    width: 170px;
+    height: 170px;
+    position: relative;
+    border-radius: 100%;
+    border: 5px solid $border-color;
+    float: left;
+    margin-right: 30px;
+
+    @media (max-width: 980px) {
+      float: none;
+      margin-bottom: 30px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 145px;
+      height: 145px;
+      background-color: transparent;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      border-radius: 100%;
+      border: 5px solid $border-color;
+      z-index: -1;
+    }
+
+    .content {
+      font-size: 40px;
+      color: $heading-color;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+  }
+
+  .pie-chart-content {
+    overflow: hidden;
+
+    .pie-chart-content-title {
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .pie-chart-content-text {
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: $font-color;
+      transition: all .3s ease;
+      font-size: 16px;
+
+      i {
+        margin-left: 10px;
+        transition: all .3s ease;
+        font-size: 12px;
+      }
+
+      &:hover {
+        color: $primary-color;
+
+        i {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.pie-chart canvas {max-width:100%}

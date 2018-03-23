@@ -1,0 +1,224 @@
+/*------------- #STUNNING-HEADER --------------*/
+
+
+.stunning-header {
+  padding: 125px 0;
+  background-position: center center;
+
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+
+  .stunning-header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    padding: 0 15px;
+
+    .stunning-header-title {
+      color: $white-color;
+
+      @media (max-width: 800px) {
+        font-size: 40px;
+      }
+
+      @media (max-width: 640px) {
+        font-size: 36px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 30px;
+      }
+
+      @media (max-width: 360px) {
+        font-size: 24px;
+      }
+    }
+
+    .breadcrumbs {
+      margin-top: 40px;
+      padding: 0;
+
+      @media (max-width: 570px) {
+        font-size: 12px;
+      }
+
+      .breadcrumbs-item {
+        display: inline-block;
+
+        a {
+          text-transform: uppercase;
+          color: rgb(255, 255, 255);
+          opacity: .5;
+          margin-right: 20px;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          &.c-gray + i {
+            color: #acacac;
+          }
+        }
+
+        &.active {
+          span {
+            color: rgb(255, 255, 255);
+            opacity: 1;
+            text-decoration: underline;
+
+            &.c-primary {
+              color: $primary-color;
+            }
+          }
+        }
+
+        i {
+          margin-right: 20px;
+          color: rgba(255,255,255,.5);
+          font-size: 14px;
+        }
+
+        &:last-child {
+          i {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &.with-photo {
+    position: relative;
+    padding: 280px 0 120px;
+    background-size: cover;
+  }
+}
+
+.stunning-header-custom {
+  color: #fff;
+}
+
+.stunning-header-custom .stunning-header-title,
+.stunning-header-custom span,
+.stunning-header-custom i,
+.stunning-header-custom a{
+  color: inherit !important;
+}
+
+
+/*------------- #Any colors background --------------*/
+
+
+.stunning-header-bg-blue {
+  background-image: url("../img/pattern-bg-blue.jpg");
+}
+
+.stunning-header-bg-gray {
+  background-image: url("../img/pattern-bg-gray.jpg");
+}
+
+.stunning-header-bg-lightblue {
+  background-image: url("../img/pattern-bg-lightblue.jpg");
+}
+
+.stunning-header-bg-violet {
+  background-image: url("../img/pattern-bg-violet.jpg");
+}
+
+.stunning-header-bg-lightgray {
+  background-image: url("../img/pattern-bg-lightgray.jpg");
+}
+
+.stunning-header-bg-breez {
+  background-image: url("../img/pattern-bg-breez.jpg");
+}
+
+.stunning-header-bg-red {
+  background-image: url("../img/pattern-bg-red.jpg");
+}
+
+.stunning-header-bg-orange {
+  background-image: url("../img/pattern-bg-orange.jpg");
+}
+
+.stunning-header-bg-green {
+  background-image: url("../img/pattern-bg-green.jpg");
+}
+
+.stunning-header-bg-olive {
+  background-image: url("../img/pattern-bg-olive.jpg");
+}
+
+.stunning-header-bg-brown {
+  background-image: url("../img/pattern-bg-brown.jpg");
+}
+
+.stunning-header-bg-rose {
+  background-image: url("../img/pattern-bg-rose.jpg");
+}
+
+.stunning-header-bg-lightviolet {
+  background-image: url("../img/pattern-bg-lightviolet.jpg");
+}
+
+.stunning-header-bg-lime {
+  background-image: url("../img/pattern-bg-lime.jpg");
+}
+
+/*------------- #Any photos background --------------*/
+
+
+.stunning-header-bg-photo1 {
+  background: url("../img/stunning-header-photo1.jpg") no-repeat;
+}
+
+.stunning-header-bg-photo2 {
+  background: url("../img/stunning-header-photo2.jpg") no-repeat;
+}
+
+.stunning-header-bg-photo3 {
+  background: url("../img/stunning-header-photo3.jpg") no-repeat;
+}
+
+.stunning-header-bg-photo4 {
+  background: url("../img/stunning-header-photo4.jpg") no-repeat;
+}
+
+.stunning-header-bg-photo5 {
+  background: url("../img/stunning-header-photo5.jpg") no-repeat;
+}
+
+.stunning-header-bg-photo6 {
+  background: url("../img/stunning-header-photo6.jpg") no-repeat;
+}
+
+
+/*------------- #Any overlays background --------------*/
+
+
+.overlay-dark {
+  background: rgba(47, 44, 44, .8);
+}
+
+.overlay-primary {
+  background: rgba(51, 204, 204, .2);
+}
+
+.overlay-red {
+  background: rgba(241, 91, 38, .3);
+}
+
+.overlay-orange {
+  background: rgba(252, 176, 59, .3);
+}
+
+.overlay-green {
+  background: rgba(60, 184, 120, .3);
+}
+
+.overlay-olive {
+  background: rgba(37, 39, 49, .8);
+}

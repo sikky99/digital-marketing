@@ -1,0 +1,125 @@
+/*------------- #SUBSCRIBE --------------*/
+
+
+.subscribe {
+  padding: 72px 0;
+  overflow: hidden;
+  position: relative;
+
+  @media (max-width: 640px) {
+    padding: 70px 0 170px;
+  }
+
+  .subscribe-title {
+    font-size: 30px;
+    color: $white-color;
+    margin-bottom: 23px;
+  }
+
+  .sub-title {
+    color: rgba(255, 255, 255, .5);
+    float: left;
+  }
+
+  .subscribe-form {
+    margin-bottom: 25px;
+
+    .email {
+      background-color: $white-color;
+      padding: 16px 40px;
+      font-size: 16px;
+      color: #797676;
+      border-color: transparent;
+      border-radius: 50px 0 0 50px;
+      width: 70%;
+      float: left;
+
+      @media (max-width: 360px) {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 50px;
+      }
+
+    }
+
+    .subscr-btn {
+      display: inline-block;
+      background-color: $heading-color;
+      padding: 17px 40px;
+      border-radius: 0 50px 50px 0;
+      font-size: 15px;
+      text-transform: uppercase;
+      width: 30%;
+      cursor: pointer;
+      position: relative;
+      color: $white-color;
+      text-align: center;
+
+      @media (max-width: 1024px) {
+        padding: 19px 6px 22px;
+        font-size: 13px;
+      }
+
+      @media (max-width: 980px) {
+
+        .semicircle--right {
+          display: none;
+        }
+      }
+
+      @media (max-width: 360px) {
+        padding: 20px;
+        width: 100%;
+        border-radius: 50px;
+      }
+
+
+    }
+
+  }
+
+  .images-block {
+
+    img {
+      position: absolute;
+      opacity: 0;
+
+      &.mail {
+        left: 0;
+        bottom: -100%;
+
+        @media (max-width: 1024px) {
+          width: 40%;
+        }
+
+        @media (max-width: 768px) {
+          width: 16%;
+        }
+
+        @media (max-width: 640px) {
+          width: 40%;
+        }
+
+        @media (max-width: 360px) {
+          width: 60%;
+        }
+      }
+
+      &.gear {
+        top: 50px;
+        right: 0;
+
+        @media (max-width: 800px) {
+            top: 10px;
+        }
+      }
+
+      &.mail-2 {
+        bottom: -50px;
+        right: -100%;
+      }
+
+    }
+  }
+
+}

@@ -1,0 +1,26 @@
+/*------------- #SOCIALS --------------*/
+
+
+
+.socials {
+  .social__item {
+    margin-left: 15px;
+
+    @media (max-width: 320px) {
+      margin-left: 5px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+
+    img {
+      height: 24px;
+    }
+  }
+}

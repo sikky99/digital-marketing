@@ -1,0 +1,72 @@
+/*------------- #OFFERS --------------*/
+
+
+.offers {
+  position: relative;
+  overflow: hidden;
+
+  .heading {
+    .heading-text {
+      margin-bottom: 31px;
+      color: $heading-color;
+    }
+  }
+
+  .offers-thumb {
+    @media (max-width: 1024px) {
+      margin-top: 35px;
+    }
+  }
+
+  .list {
+    padding-left: 60px;
+    margin-bottom: 45px;
+
+    @media (max-width: 640px) {
+      padding-left: 0;
+    }
+  }
+
+  .btn {
+
+      @media (max-width: 1024px) {
+         margin-bottom: 20px;
+      }
+
+    @media (max-width: 360px) {
+      margin-left: 0;
+    }
+  }
+}
+
+
+
+/*------------- #Our vision --------------*/
+
+
+.our-vision {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0 215px;
+
+  .elements {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+  }
+
+  .eye {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    bottom: -100%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+  }
+}

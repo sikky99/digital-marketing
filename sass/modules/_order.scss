@@ -1,0 +1,140 @@
+/*------------- #ORDER --------------*/
+
+
+.order {
+
+  .order-title {
+	margin-bottom: 60px;
+  }
+
+  .cart-main {
+	.cart_item  {
+
+	  td {
+		padding-left: 100px;
+
+		@media (max-width: 640px) {
+		  padding-left: 20px;
+		}
+	  }
+
+	  &.subtotal {
+		background-color: $border-color;
+
+		.cart-product-title {
+		  text-transform: uppercase;
+		}
+
+		.product-subtotal .total {
+		  color: $heading-color;
+		}
+
+		&:after {
+		  display: none;
+		}
+	  }
+
+	  &.total {
+		background-color: $primary-color;
+
+		.cart-product-title {
+		  color: $white-color;
+		  text-transform: uppercase;
+		}
+
+		.product-subtotal .total {
+		  color: $white-color;
+		}
+
+		&:after {
+		  display: none;
+		}
+
+		.product-thumbnail {
+		  &:after {
+			content: '';
+			display: block;
+			border: 30px solid transparent;
+			border-top: 20px solid $primary-color;
+			position: absolute;
+			bottom: -50px;
+			left: 100px;
+			opacity: 1;
+		  }
+		}
+	  }
+
+	}
+
+	.cart-product-wrap-title-main tr > th {
+	 padding-left: 100px;
+
+	  @media (max-width: 640px) {
+		padding-left: 20px;
+	  }
+	}
+
+	.product-quantity .quantity {
+	 font-size: 18px;
+	  color: $heading-color;
+	}
+
+	.actions {
+	  padding: 40px 100px;
+	}
+  }
+
+  .cheque {
+	padding: 85px 100px;
+	overflow: hidden;
+
+	@media (max-width: 460px) {
+	  padding: 30px;
+	}
+
+	.cheque-content {
+
+  		.cheque-content-title {
+			margin-bottom: 15px;
+ 		 }
+
+	  .cheque-content-subtitle {
+		font-size: 16px;
+		margin-bottom: 30px;
+	  }
+
+	}
+
+	.logos {
+		a {
+		margin-right: 8px;
+		margin-top: 22px;
+		display: inline-block;
+
+		@media (max-width: 480px) {
+		  float: left;
+		}
+
+		&.pay-pal {
+		margin-right: 60px;
+		  margin-top: 9px;
+	  	}
+	  }
+
+	  .btn {
+		float: right;
+		padding: 25px 80px;
+
+		@media (max-width: 800px) {
+		  float: left;
+		  margin-top: 30px;
+		}
+
+		@media (max-width: 480px) {
+		  padding: 25px 30px;
+		}
+	  }
+	}
+
+  }
+}

@@ -1,0 +1,288 @@
+/*------------- #TYPOGRAPHY --------------*/
+
+
+h1, .h1 {
+  margin: 0;
+  font-size: $h1-fontsize;
+  font-weight: $h-font-weight;
+  color: $heading-color;
+  font-family: $heading-font-family;
+
+  a {
+    color: inherit;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 24px;
+  }
+}
+
+h2, .h2 {
+  margin: 0;
+  font-size: $h2-fontsize;
+  font-weight: $h-font-weight;
+  color: $heading-color;
+  font-family: $heading-font-family;
+
+  a {
+    color: inherit;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 570px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 26px;
+  }
+}
+
+h3, .h3 {
+  margin: 0;
+  font-size: $h3-fontsize;
+  font-weight: $h-font-weight;
+  color: $heading-color;
+  font-family: $heading-font-family;
+
+  a {
+    color: inherit;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 570px) {
+    font-size: 26px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 22px;
+  }
+}
+
+h4, .h4 {
+  margin: 0;
+  font-size: $h4-fontsize;
+  font-weight: $h-font-weight;
+  color: $heading-color;
+  font-family: $heading-font-family;
+
+  a {
+    color: inherit;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 570px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
+}
+
+h5, .h5 {
+  margin: 0;
+  font-size: $h5-fontsize;
+  font-weight: $h-font-weight;
+  color: $heading-color;
+  font-family: $heading-font-family;
+
+  a {
+    color: inherit;
+  }
+
+  @media (max-width: 980px) {
+    font-size: 15px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+
+h6, .h6 {
+  margin: 0;
+  font-size: $h6-fontsize;
+  font-weight: $h-font-weight;
+  color: $heading-color;
+  font-family: $heading-font-family;
+
+  a {
+    color: inherit;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+  }
+}
+
+
+/*------------- #Styles for First-Letter --------------*/
+
+.first-letter--dark-round span:first-of-type {
+   display: block;
+   position: relative;
+   width: 70px;
+   height: 70px;
+   background-color: #2f2c2c;
+   border-radius: 50%;
+   float: left;
+   margin-right: 20px;
+   line-height: 70px;
+   font-size: 30px;
+   color: #fff;
+   text-align: center;
+ }
+
+.first-letter--squared span:first-of-type {
+  display: block;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: $primary-color;
+  border-radius: 5px;
+  float: left;
+  margin-right: 20px;
+  line-height: 70px;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.first-letter--dark span:first-of-type {
+
+  margin-right: 20px;
+  font-size: 48px;
+  line-height: 48px;
+  color: $heading-color;
+  float: left;
+}
+
+.first-letter--primary span:first-of-type {
+
+  margin-right: 20px;
+  font-size: 48px;
+  line-height: 48px;
+  color: $primary-color;
+  float: left;
+}
+
+/*------------- #Styles for Text Selection --------------*/
+
+/*Selection dark*/
+
+.selection--dark::-moz-selection{background: $heading-color; color: $font-color;}
+.selection--dark::selection{background: $heading-color; color: $font-color;}
+
+/*Selection primary*/
+
+.selection--primary::-moz-selection{background: $primary-color; color: $white-color;}
+.selection--primary::selection{background: $primary-color; color: $white-color;}
+
+/*Selection gray*/
+
+.selection--gray::-moz-selection{background: #e1e1e1; color: $heading-color;}
+.selection--gray::selection{background: #e1e1e1; color: $heading-color;}
+
+
+/*------------- #Styles for list --------------*/
+
+.list {
+
+  & > li {
+    margin-bottom: 18px;
+    font-size: 18px;
+    transition: all .3s ease;
+
+    @media (max-width: 640px) {
+      font-size: 14px;
+    }
+
+    a, li {
+      color: $font-color;
+      display: block;
+      overflow: hidden;
+    }
+
+    i {
+      margin-right: 30px;
+      margin-top: 8px;
+      font-size: 12px;
+      float: left;
+      transition: all .3s ease;
+    }
+  }
+
+}
+
+.list--secondary {
+  a, li {
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  i {
+    color: $secondary-color;
+  }
+}
+
+.list--primary {
+  a, li {
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  i {
+    color: $primary-color;
+  }
+}
+
+.list--standard {
+
+  a, li {
+
+    &:hover {
+      color: $heading-color;
+    }
+  }
+
+  .number {
+    color: $heading-color;
+    margin-right: 24px;
+    float: left;
+  }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

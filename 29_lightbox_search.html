@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seosight - Lightbox Search</title>
+
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/crumina-fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/blocks.css">
+    <link rel="stylesheet" type="text/css" href="css/layouts.css">
+    <link rel="stylesheet" type="text/css" href="css/modules.css">
+    <link rel="stylesheet" type="text/css" href="css/widgets-styles.css">
+
+
+    <!--Plugins styles-->
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/primary-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+
+    <!--Styles for RTL-->
+
+    <!--<link rel="stylesheet" type="text/css" href="css/rtl.css">-->
+
+
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body class=" ">
+
+
+<!-- Header -->
+
+<header class="header" id="site-header">
+
+    <div class="container">
+
+        <div class="header-content-wrapper">
+
+            <div class="logo">
+                <a href="index.html" class="full-block-link"></a>
+                <img src="img/logo-eye.png" alt="Seosight">
+                <div class="logo-text">
+                    <div class="logo-title">Seosight</div>
+                    <div class="logo-sub-title">SEO, Digital Marketing</div>
+                </div>
+            </div>
+
+            <nav id="primary-menu" class="primary-menu">
+
+                <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+                    <span class="mob-menu--title">Menu</span>
+                        <span id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+                            <svg width="1000px" height="1000px">
+                                <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                                <path id="pathE" d="M 300 500 L 700 500"></path>
+                                <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                            </svg>
+                        </span>
+                </a>
+
+                <!-- menu-icon-wrapper -->
+
+                <ul class="primary-menu-menu">
+                    <li class="menu-item-has-children">
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li class="">
+                        <a href="03_services.html">Services</a>
+                        <ul class="dropdown">
+                            <li class="megamenu-item-info">
+                                <h5 class="megamenu-item-info-title">List of Services</h5>
+                                <p class="megamenu-item-info-text">Choose a Service</p>
+                            </li>
+                            <li class="hover-ver2">
+                                <a href="05_service_details_localseo.html"><i class="seoicon-pin-map"></i>
+                                    Local SEO
+                                </a>
+                            </li>
+                            <li class="hover-ver2">
+                                <a href="07_service_email_marketing.html"><i class="seoicon-mail-send"></i>
+                                    Email Marketing
+                                </a>
+                            </li>
+                            <li class="hover-ver2">
+                                <a href="06_service_detail.html"><i class="seoicon-chat-comment"></i>
+                                    Social Media Marketing
+                                </a>
+                            </li>
+                            <li class="menu-item-has-children hover-ver2">
+                                <a href="04_service_detail_seo.html">
+                                    <i class="seoicon-search"></i>
+                                    Search Engine Optimization
+                                </a>
+                            </li>
+                            <li class="hover-ver2">
+                                <a href="08_service_ppc_management.html"><i class="seoicon-button"></i>
+                                    Pay Per Click Management
+                                </a>
+                            </li>
+                            <li class="menu-item-has-children hover-ver2">
+                                <a href="03_services.html">
+                                    <i class="seoicon-pie-graph-split"></i>
+                                    Services Promo List
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="">
+                        <a href="#">Case Studies</a>
+                        <ul class="dropdown">
+                            <li class="">
+                                <a href="11_case_studies.html">
+                                    Case Studies Page
+                                    <i class="seoicon-right-arrow"></i>
+                                </a>
+                            </li>
+
+                            <li class="">
+                                <a href="12_project_details_ver_01.html">
+                                    Project details ver1
+                                    <i class="seoicon-right-arrow"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="13_project_details_ver_02.html">
+                                    Project details ver2
+                                    <i class="seoicon-right-arrow"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="has-megamenu menu-item-has-children">
+                        <a href="#">Pages</a>
+
+                        <div class="megamenu" style="background-image: url('img/menu-bg.png');">
+                            <div class="megamenu-row">
+
+                                <div class="col3">
+                                    <ul>
+                                        <li class="megamenu-item-info">
+                                            <h5 class="megamenu-item-info-title">Standard Pages</h5>
+                                            <p class="megamenu-item-info-text">Pages that every website needs.</p>
+                                        </li>
+
+                                        <li>
+                                            <a href="02_abouts.html">Our Agency<i class="seoicon-right-arrow"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="21_seo_analysis.html">SEO Analysis<i class="seoicon-right-arrow"></i></a>
+                                        </li>
+
+                                        <li>
+                                            <a href="10_testimonials.html">Testimonials <i class="seoicon-right-arrow"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="09_our_clients.html">Our Special Clients<i class="seoicon-right-arrow"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="34_pricing-tables.html">Pricing Packages<i class="seoicon-right-arrow"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="404.html">404 Page<i class="seoicon-right-arrow"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col3">
+                                    <ul>
+                                        <li class="megamenu-item-info">
+                                            <h5 class="megamenu-item-info-title">Features</h5>
+                                            <p class="megamenu-item-info-text">Features of Our Digital Agency.</p>
+                                        </li>
+
+                                        <li>
+                                            <a href="36_slider-with-photo.html">Main slider with photo<i class="seoicon-right-arrow"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="25_navigation-flat.html">Stunning Headers<i class="seoicon-right-arrow"></i></a>
+                                        </li>
+
+                                        <li>
+                                            <a href="37_navigation-with-photo.html">Sub-headers with photo<i class="seoicon-right-arrow"></i></a>
+                                        </li>
+
+                                        <li>
+                                            <a href="38_photo-elements.html">Photo elements<i class="seoicon-right-arrow"></i></a>
+                                        </li>
+
+                                        <li>
+                                            <a href="32_testimonials.html">Our Testimonials<i class="seoicon-right-arrow"></i></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="col3">
+                                    <ul>
+
+                                        <li class="megamenu-item-info">
+                                            <h5 class="megamenu-item-info-title">Web Elements</h5>
+                                            <p class="megamenu-item-info-text">Awesome header and title style
+                                                variations and many more.</p>
+                                        </li>
+
+                                        <li>
+                                            <a href="typography.html">Typography<i class="seoicon-right-arrow"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="33_charts_counters.html">Charts &amp; Graphs<i class="seoicon-right-arrow"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="buttons.html">Buttons<i class="seoicon-right-arrow"></i></a>
+                                        </li>
+
+                                        <li>
+                                            <a href="28_popup-search.html">Popup Search<i class="seoicon-right-arrow"></i></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+
+                                <div class="col3">
+                                    <ul>
+                                        <li>
+                                            <div class="google-logo">
+                                                <img src="img/google-logo.png" alt="logo">
+                                            </div>
+
+                                            <p class="google-text">The Yoast Analytics plugin lets you easily
+                                                connect your website to Google Analytics and keep track of all
+                                                your site traffic and key metrics in real-time.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="14_blog.html">Blog</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Shop</a>
+                        <ul class="dropdown">
+                            <li class="">
+                                <a href="16_shop.html">
+                                    Shop Page
+                                    <i class="seoicon-right-arrow"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="17_product_details.html">
+                                    Product Details
+                                    <i class="seoicon-right-arrow"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="20_checkout.html">
+                                    Checkout
+                                    <i class="seoicon-right-arrow"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="19_cart.html">
+                                    Shopping Cart
+                                    <i class="seoicon-right-arrow"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li class="">
+                        <a href="22_contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="nav-add">
+                <li class="cart">
+
+                    <a href="#" class="js-cart-animate">
+                        <i class="seoicon-basket"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+
+                    <div class="cart-popup-wrap">
+                        <div class="popup-cart">
+                            <h4 class="title-cart">No products in the cart!</h4>
+                            <p class="subtitle">Please make your choice.</p>
+                            <div class="btn btn-small btn--dark">
+                                <span class="text">view all catalog</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="search search_main">
+                    <a href="#" class="js-open-search">
+                        <i class="seoicon-loupe"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="user-menu open-overlay">
+                <a href="#" class="user-menu-content  js-open-aside">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+<div class="header-spacer"></div>
+
+<!-- ... End Header -->
+
+<!-- Right-menu -->
+
+<div class="mCustomScrollbar" data-mcs-theme="dark">
+
+    <div class="popup right-menu">
+
+        <div class="right-menu-wrap">
+
+            <div class="user-menu-close js-close-aside">
+                <a href="#" class="user-menu-content  js-clode-aside">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+            <div class="logo">
+                <a href="index.html" class="full-block-link"></a>
+                <img src="img/logo-eye.png" alt="Seosight">
+                <div class="logo-text">
+                    <div class="logo-title">Seosight</div>
+                </div>
+            </div>
+
+            <p class="text">Investigationes demonstraverunt lectores legere me lius quod
+                ii legunt saepius est etiam processus dynamicus.
+            </p>
+
+        </div>
+
+        <div class="widget login">
+
+            <h4 class="login-title">Sign In to Your Account</h4>
+            <input class="email input-standard-grey" placeholder="Username or Email" type="text">
+            <input class="password input-standard-grey" placeholder="Password" type="password">
+            <div class="login-btn-wrap">
+
+                <div class="btn btn-medium btn--dark btn-hover-shadow">
+                    <span class="text">login now</span>
+                    <span class="semicircle"></span>
+                </div>
+
+                <div class="remember-wrap">
+
+                    <div class="checkbox">
+                        <input id="remember" type="checkbox" name="remember" value="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="helped">Lost your password?</div>
+            <div class="helped">Register Now</div>
+
+        </div>
+
+
+
+        <div class="widget contacts">
+
+            <h4 class="contacts-title">Get In Touch</h4>
+            <p class="contacts-text">Lorem ipsum dolor sit amet, duis metus ligula amet in purus,
+                vitae donec vestibulum enim, tincidunt massa sit, convallis ipsum.
+            </p>
+
+            <div class="contacts-item">
+                <img src="img/contact4.png" alt="phone">
+                <div class="content">
+                    <a href="#" class="title">8 800 567.890.11</a>
+                    <p class="sub-title">Mon-Fri 9am-6pm</p>
+                </div>
+            </div>
+
+            <div class="contacts-item">
+                <img src="img/contact5.png" alt="phone">
+                <div class="content">
+                    <a href="#" class="title">info@seosight.com</a>
+                    <p class="sub-title">online support</p>
+                </div>
+            </div>
+
+            <div class="contacts-item">
+                <img src="img/contact6.png" alt="phone">
+                <div class="content">
+                    <a href="#" class="title">Melbourne, Australia</a>
+                    <p class="sub-title">795 South Park Avenue</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ... End Right-menu -->
+
+
+<!-- Main Slider -->
+
+<div class="container-full-width">
+    <div class="swiper-container main-slider" data-effect="fade" data-autoplay="4000">
+
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="main-slider bg-border-color">
+
+                    <div class="container full-height">
+
+                        <div class="table">
+
+                            <div class="row table-cell">
+
+                                <div class="slider-content-fullwidth">
+
+                                    <div class="slider-content align-center">
+
+                                        <h1 class="slider-content-title" data-swiper-parallax="-100">Search Engine Optimization!</h1>
+                                        <h5 class="slider-content-text" data-swiper-parallax="-200">Discover More About Our SEO Expertise!</h5>
+
+                                        <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+
+                                            <a href="04_service_detail_seo.html" class="btn btn-medium btn--dark btn-hover-shadow">
+                                                <span class="text">learn more</span>
+                                                <span class="semicircle"></span>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="slider-content-fullwidth">
+                                    <div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
+                                        <img src="img/slider1.png" alt="slider">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="main-slider bg-primary-color main-slider-bg-dark thumb-left">
+                    <div class="container full-height">
+
+                        <div class="table">
+
+                            <div class="row table-cell">
+
+                                <div class="slider-content-half-width table-cell">
+                                    <div class="slider-content">
+                                        <h3 class="slider-content-title" data-swiper-parallax="-100"><span class="c-dark">Local SEO</span> is about bringing
+                                            customers through
+                                            your doors.</h3>
+                                        <h6 class="slider-content-text" data-swiper-parallax="-200">Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat
+                                            eleifend option.
+                                        </h6>
+
+                                        <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+
+                                            <a href="05_service_details_localseo.html" class="btn btn-medium btn--dark btn-hover-shadow">
+                                                <span class="text">learn more</span>
+                                                <span class="semicircle"></span>
+                                            </a>
+
+                                            <a href="05_service_details_localseo.html" class="btn btn-small btn--primary" data-swiper-parallax="-300">
+                                                <span class="text">Our Services</span>
+                                                <i class="seoicon-right-arrow"></i>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="slider-content-half-width table-cell">
+                                    <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
+                                        <img src="img/slider2.png" alt="slider">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="main-slider bg-secondary-color main-slider-bg-dark">
+                    <div class="container full-height">
+
+                        <div class="table">
+                            <div class="row table-cell">
+
+                                <div class="slider-content-half-width table-cell">
+
+                                    <div class="slider-content">
+
+                                        <h3 class="h1 slider-content-title c-dark" data-swiper-parallax="-100">Social Media
+                                            Marketing Services
+                                        </h3>
+
+                                        <h5 class="slider-content-text" data-swiper-parallax="-200">An effective social strategy can help you grow your
+                                            business, maintain your social presence and engage with the audience.
+                                        </h5>
+
+                                        <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+
+                                            <a href="06_service_detail.html" class="btn btn-medium btn--dark btn-hover-shadow">
+                                                <span class="text">learn more</span>
+                                                <span class="semicircle"></span>
+                                            </a>
+
+                                            <a href="06_service_detail.html" class="btn btn-medium btn-border">
+                                                <span class="text">GET STARTED</span>
+                                                <span class="semicircle"></span>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="slider-content-half-width table-cell">
+                                    <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
+                                        <img src="img/slider3.png" alt="slider">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="main-slider bg-orange-color main-slider-bg-dark">
+                    <div class="container full-height">
+
+                        <div class="table">
+                            <div class="row table-cell">
+
+                                <div class="slider-content-fullwidth">
+
+                                    <div class="slider-content align-center">
+                                        <h3 class="h1 slider-content-title c-dark" data-swiper-parallax="-100">Email Marketing</h3>
+                                        <h5 class="slider-content-text" data-swiper-parallax="-200">We create tailored marketing campaigns for each segment
+                                            of your audience to help advertise products and services in efforts to efficiently
+                                            and effectively engage new customers.
+                                        </h5>
+
+                                        <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+
+                                            <a href="07_service_email_marketing.html" class="btn btn-medium btn--dark btn-hover-shadow">
+                                                <span class="text">learn more</span>
+                                                <span class="semicircle"></span>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="slider-content-fullwidth">
+                                    <div class="slider-thumb" data-swiper-parallax="-400" data-swiper-parallax-duration="600">
+                                        <img src="img/slider4.png" alt="slider">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="main-slider bg-green-color main-slider-bg-dark">
+                    <div class="container full-height">
+
+                        <div class="table">
+                            <div class="row table-cell">
+
+                                <div class="slider-content-half-width table-cell">
+                                    <div class="slider-content">
+
+                                        <h3 class="h1 slider-content-title c-dark" data-swiper-parallax="-100">Pay Per Click (PPC)
+                                            Management
+                                        </h3>
+
+                                        <h5 class="slider-content-text" data-swiper-parallax="-200">Pay Per Click has an instant impact and gives
+                                            your brand a much larger reach and exposure as a result of first page exposure on
+                                            major search engines.
+                                        </h5>
+
+                                        <div class="main-slider-btn-wrap" data-swiper-parallax="-300">
+
+                                            <a href="08_service_ppc_management.html" class="btn btn-medium btn--dark btn-hover-shadow">
+                                                <span class="text">learn more</span>
+                                                <span class="semicircle"></span>
+                                            </a>
+
+                                            <a href="08_service_ppc_management.html" class="btn btn-medium btn-border btn-hover-shadow">
+                                                <span class="text">GET STARTED</span>
+                                                <span class="semicircle"></span>
+                                            </a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="slider-content-half-width table-cell">
+                                    <div class="slider-thumb" data-swiper-parallax="-300" data-swiper-parallax-duration="500">
+                                        <img src="img/slider5.png" alt="slider">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Prev next buttons-->
+
+        <svg class="btn-next btn-next-black">
+            <use xlink:href="#arrow-right"></use>
+        </svg>
+
+        <svg class="btn-prev btn-prev-black">
+            <use xlink:href="#arrow-left"></use>
+        </svg>
+
+        <!--Pagination tabs-->
+
+        <div class="slider-slides">
+            <a href="#" class="slides-item bg-border-color main-slider-bg-light">
+                <div class="content">
+                    <div class="text-wrap">
+                        <h4 class="slides-title">Search Engine Optimization</h4>
+                    </div>
+                    <div class="slides-number">01</div>
+                </div>
+            </a>
+
+            <a href="#" class="slides-item bg-primary-color">
+                <div class="content">
+                    <div class="text-wrap">
+                        <h4 class="slides-title">Local SEO</h4>
+                        <div class="slides-sub-title">Mirum est notare quam littera.</div>
+                    </div>
+                    <div class="slides-number">02</div>
+                </div>
+            </a>
+
+            <a href="#" class="slides-item bg-secondary-color">
+                <div class="content">
+                    <div class="text-wrap">
+                        <h4 class="slides-title">Social Media Marketing</h4>
+                    </div>
+                    <div class="slides-number">03</div>
+                </div>
+            </a>
+
+            <a href="#" class="slides-item bg-orange-color">
+                <div class="content">
+                    <div class="text-wrap">
+                        <h4 class="slides-title">Email Marketing</h4>
+                    </div>
+                    <div class="slides-number">04</div>
+                </div>
+            </a>
+
+            <a href="#" class="slides-item bg-green-color">
+                <div class="content">
+                    <div class="text-wrap">
+                        <h4 class="slides-title">Pay Per Click Management</h4>
+                    </div>
+                    <div class="slides-number">05</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ... End Main Slider -->
+
+
+<div class="overlay_search" style="display: block">
+    <div class="container">
+        <div class="row">
+            <div class="form_search-wrap">
+                <form>
+                    <input class="overlay_search-input" placeholder="Type and hit Enter..." type="text">
+                    <a href="#" class="overlay_search-close">
+                        <span></span>
+                        <span></span>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JS Script -->
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/crum-mega-menu.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+
+<script src="js/theme-plugins.js"></script>
+<script src="js/main.js"></script>
+
+<script src="js/ScrollMagic.min.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/animation.velocity.min.js"></script>
+
+<script src="js/ajax-pagination.js"></script>
+
+<!-- ...end JS Script -->
+
+</body>
+</html>

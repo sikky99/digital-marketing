@@ -1,0 +1,170 @@
+/*------------- #CLIENTS --------------*/
+
+
+.client-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 39px;
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 570px) {
+    margin-bottom: 30px;
+  }
+
+  .client-image {
+    position: relative;
+    transition: all .3s ease;
+    backface-visibility: hidden;
+    text-align: center;
+
+    img {
+      position: relative;
+      backface-visibility: hidden;
+
+    }
+  }
+
+  &:hover {
+
+    .client-image {
+      opacity: 0.5;
+      backface-visibility: hidden;
+    }
+
+  }
+}
+
+.client-item-style2 {
+    padding: 60px 40px;
+    text-align: center;
+    transition: all .3s ease;
+    float: left;
+
+  .client-image {
+    position: relative;
+    margin-bottom: 60px;
+    text-align: center;
+
+    img {
+      position: relative;
+      transition: all .3s ease;
+      backface-visibility: hidden;
+
+      &.hover {
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+      }
+    }
+  }
+
+  .clients-item-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  .clients-item-text {
+    margin-bottom: 30px;
+  }
+
+  &:hover {
+    background-color: $primary-color;
+
+    .client-image .hover {
+      opacity: 1;
+    }
+
+    .clients-item-text {
+      color: $white-color;
+    }
+
+    .btn {
+      color: $white-color;
+      background-color: $heading-color;
+      border-color: $heading-color;
+
+      .semicircle::after {
+        border-color: $white-color;
+      }
+    }
+
+  }
+
+  &.col-3 {
+
+  }
+}
+
+.load-more {
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .3s ease;
+  display: block;
+  max-width: 120px;
+
+  .load-more-img-wrap {
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+    background-image: url("../img/load-more-arrow.png");
+    background-position: 54% 50%;
+    background-repeat: no-repeat;
+
+    img {
+      position: relative;
+    }
+  }
+
+  .load-more-text {
+    color: #d7d7d7;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all .3s ease;
+  }
+
+  &:hover {
+
+    .load-more-text {
+      color: $primary-color;
+    }
+
+    .load-more-img-wrap {
+      animation: rotate-img 1.5s infinite linear;
+
+      img {
+        animation: rotate-img 2s infinite linear;
+
+        @keyframes rotate-img {
+
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+      }
+    }
+  }
+
+  &.last-page {
+    &:hover {
+
+      .load-more-img-wrap {
+        animation: none;
+
+        img {
+          animation: none;
+
+        }
+      }
+
+    }
+  }
+}

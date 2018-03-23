@@ -1,0 +1,118 @@
+/*------------- #SHOP-USER-FORM --------------*/
+
+
+
+.shop-user-form {
+  .item-title {
+	font-size: 30px;
+	padding-bottom: 40px;
+	display: block;
+	position: relative;
+
+	@media (max-width: 640px) {
+	  font-size: 20px;
+	}
+
+	&:after {
+	  content: '';
+	  display: block;
+	  border: 30px solid transparent;
+	  border-bottom: 20px solid $border-color;
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  opacity: 0;
+	}
+
+	&.active {
+	  color: $primary-color;
+
+	  &:after {
+		opacity: 1;
+	  }
+	}
+  }
+
+  input {
+	background-color: $white-color;
+	margin-bottom: 30px;
+  }
+
+  .helped {
+	padding: 20px 0;
+	color: $primary-color;
+	display: block;
+  }
+
+  .login-btn-wrap {
+	overflow: hidden;
+	padding-bottom: 20px;
+	display: table;
+
+	.btn {
+	  float: left;
+	  margin-right: 20px;
+
+	  @media (max-width: 360px) {
+		margin-bottom: 30px;
+	  }
+	}
+
+	.remember-wrap {
+	  display: table-cell;
+	  vertical-align: middle;
+
+	  @media (max-width: 320px) {
+		display: block;
+	  }
+
+	  .checkbox {
+		position: relative;
+
+		input[type=checkbox] {
+		  display: none;
+		}
+
+		label {
+		  padding-left: 30px;
+		  color: $heading-color;
+		}
+
+		label:before {
+		  content: "";
+		  display: inline-block;
+		  width: 14px;
+		  height: 14px;
+		  position: absolute;
+		  left: 0;
+		  bottom: 5px;
+		  border-radius: 3px;
+		  background-color: $primary-color;
+		  border: none;
+		}
+
+		input[type=checkbox]:checked + label:before {
+		  content: "\2714";
+		  font-size: 14px;
+		  color: $white-color;
+		  text-align: center;
+		  line-height: 14px;
+		}
+	  }
+
+	}
+
+  }
+
+  .shop-user-form-return {
+	p {
+	  margin-bottom: 30px;
+	}
+  }
+}
+
+.billing-details {
+  .billing-details-title {
+	margin-bottom: 60px;
+  }
+}

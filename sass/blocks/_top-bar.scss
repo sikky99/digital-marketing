@@ -1,0 +1,266 @@
+/*------------- #TOP-BAR --------------*/
+
+
+.top-bar {
+  background-color: $white-color;
+  padding: 16px 0;
+  font-size: 14px;
+  color: $heading-color;
+  box-shadow: 0 -20px 40px rgba(0, 0, 0, .3);
+  position: relative;
+  z-index: 30;
+  transition: all .3s ease;
+
+  @media (max-width: 1024px) {
+    width: 320px;
+    transform: translate(-50%, -100%);
+    position: absolute;
+    left: 50%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  & > .container {
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+
+  &.open {
+    transform: translate(-50%, 0);
+    z-index: 999;
+  }
+
+  .flags {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .top-bar-contact {
+    float: left;
+
+    @media (max-width: 1024px) {
+      float: none;
+      padding-right: 30px;
+    }
+  }
+
+  .nice-select {
+    float: left;
+    padding: 0 40px 0 0;
+    background-color: transparent;
+    font-size: 14px;
+    margin-bottom: 0;
+    color: $primary-color;
+
+    @media (max-width: 1024px) {
+      float: none;
+    }
+
+    span {
+      color: $primary-color;
+    }
+
+    .option {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 12px;
+    }
+
+    &:after {
+      height: 6px;
+      width: 6px;
+      margin-top: -4px;
+    }
+
+    &:focus {
+      box-shadow: none;
+      background-color: transparent;
+    }
+  }
+
+  .contact-item {
+    float: left;
+    padding: 0 30px;
+    position: relative;
+
+    @media (max-width: 1024px) {
+      padding: 0;
+      margin-bottom: 15px;
+      float: none;
+    }
+
+    &:first-child {
+      padding-left: 0;
+      padding-right: 10px;
+
+      @media (max-width: 1024px) {
+        padding: 0;
+      }
+    }
+
+    &:last-child {
+      padding-right: 0;
+
+      &:after {
+        display: none;
+      }
+
+    }
+
+    &:after {
+      content: '|';
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      color: $body-font-color;
+
+      @media (max-width: 1024px) {
+       display: none;
+      }
+    }
+  }
+
+  a {
+    color: #504c4c;
+    border-bottom: 1px dashed #504c4c;
+
+    &:hover {
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+
+  span {
+    color: $body-font-color;
+  }
+
+  .follow_us {
+    float: right;
+
+    @media (max-width: 1024px) {
+      float: none;
+    }
+  }
+
+  .login-block {
+    float: right;
+    margin-left: 70px;
+
+    @media (max-width: 1024px) {
+     float: none;
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+
+    img {
+      width: 28px;
+      height: 28px;
+      margin-right: 20px;
+    }
+  }
+
+  .socials {
+    display: inline-block;
+    margin-left: 10px;
+
+    img {
+      width: 16px;
+      height: auto;
+    }
+
+    a {
+      border: none;
+    }
+
+    .social__item {
+      margin-left: 10px;
+    }
+  }
+
+  & + .header {
+    top: 68px;
+
+    @media (max-width: 1024px) {
+      top: 0;
+    }
+
+    &.headroom--not-top {
+      top: 0;
+    }
+  }
+
+  .top-bar-close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+    border: none;
+
+    @media (max-width: 1024px) {
+      display: block;
+    }
+
+    span {
+      display: block;
+      height: 2px;
+      background: #707070;
+      border-radius: 10px;
+      margin: auto;
+      width: 100%;
+      transition: all .3s ease;
+      top: 50%;
+      position: absolute;
+
+      &:first-of-type {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+      }
+
+      &:last-of-type {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+      }
+    }
+  }
+
+}
+
+.top-bar-dark {
+  background-color: #151414;
+  color: #797676;
+
+  a {
+    color: #797676;
+  }
+
+  span {
+    color: #504c4c;
+  }
+
+  .nice-select .list {
+    background-color: #151414;
+    border: none;
+    box-shadow: 0 5px 40px rgba(255, 255, 255, .3);
+  }
+
+  .nice-select .option.selected.focus {
+    background-color: transparent;
+
+    &:hover {
+      background-color: #424444;
+    }
+  }
+
+  .nice-select .option:hover {
+    background-color: #424444;
+  }
+}
